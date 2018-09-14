@@ -55,9 +55,9 @@ class Mitshubishi extends Car {
         return "Mitshubishi -> brake()";
     }
 
-    }
+}
 
- class Holden extends Car {
+class Holden extends Car {
 
     public Holden(int cylinders, String name) {
         super(cylinders, name);
@@ -79,7 +79,7 @@ class Mitshubishi extends Car {
     }
 }
 
- class Ford extends Car {
+class Ford extends Car {
 
     public Ford(int cylinders, String name) {
         super(cylinders, name);
@@ -110,16 +110,20 @@ public class Main {
         System.out.println(car.brake());
 
         Mitshubishi mitshubishi = new Mitshubishi(6, "Outlander 4RW 4WD");
-
         System.out.println(mitshubishi.startEngine());
         System.out.println(mitshubishi.accelerate());
         System.out.println(mitshubishi.brake());
 
         Ford ford = new Ford(6, "Ford Falcon");
-
         System.out.println(ford.startEngine());
         System.out.println(ford.accelerate());
         System.out.println(ford.brake());
-    }
 
+
+        Holden holden = new Holden(6, "Holden Falcon");
+        System.out.println(holden.startEngine());
+        System.out.println(holden.accelerate());
+        System.out.println(holden.brake());
     }
+}
+
