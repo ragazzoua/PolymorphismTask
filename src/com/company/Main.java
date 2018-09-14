@@ -22,11 +22,11 @@ class Car {
     }
 
     public String startEngine() {
-        return "Car -> startEngine()";
+        return getClass().getSimpleName() + " -> startEngine()";
     }
 
     public String accelerate() {
-        return "Car -> accelerate()";
+        return getClass().getSimpleName() + " -> accelerate()";
     }
 
     public String brake() {
